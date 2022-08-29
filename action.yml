@@ -1,0 +1,10 @@
+name: setup-with-arkade
+description: Github Setup Action with Arkade
+inputs:
+  clis:
+    description: List of the CLI tools to install
+    default: ""
+    required: false
+runs:
+  using: node16
+  main: dist/index.js

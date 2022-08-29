@@ -1,0 +1,34 @@
+{
+  "name": "setup-with-arkade",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Github Action to setup multiple tools at once",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "build": "ncc build index.ts -o dist --source-map --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shikachuu/setup-with-arkade.git"
+  },
+  "author": "Czékus Máté <mate@picloud.hu>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Shikachuu/setup-with-arkade/issues"
+  },
+  "homepage": "https://github.com/Shikachuu/setup-with-arkade#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/http-client": "^2.0.1",
+    "@actions/tool-cache": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "@vercel/ncc": "^0.34.0",
+    "eslint": "^8.23.0"
+  }
+}
